@@ -140,12 +140,13 @@ An RTL implementation of a RISC-V core has been provided to us and we run the ab
 
 ## Day 3: Digital Logic with TL-Verilog and Makerchip
 
-### Content
+### Contents
+```
 1. Combinational logic in TL-Verilog using Makerchip
 2. Sequential and pipelined logic
 3. Validity
 4. Hierarchy
-
+```
 An introduction to TL-Verilog with implemention of basic combinational and sequential logic.Finally implementating a sequential cyclic calculator. Makerchip IDE, which is an open source tool developed by Redwood EDA was utilised for this.
 TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the end of the pipeline.
 
