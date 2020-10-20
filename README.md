@@ -45,10 +45,10 @@ The workshop began with the brief introductory session about the flow we would b
 
 A brief overview of how the higher level languages are converted into assembly language followed by conversion into machine/binary format, and finally how it gets converted into a chip layout was explained by @Kunalghosh. We were introduced to RISC-V ISA and GNU Compiler Toolchain as well as with various types of RISC-V instructions sets, such as:
 
-**RV64I or RV32I Base integer instructions**: 64 and 32 bit data instructions respectively
-**RV64M**: Multiply extension
-**RV64IM**: Includes base and multiple extension.
-**RV64F and RV64D**: Floating point and Double extenstion.
+* **RV64I or RV32I Base integer instructions**: 64 and 32 bit data instructions respectively
+* **RV64M**: Multiply extension
+* **RV64IM**: Includes base and multiple extension.
+* **RV64F and RV64D**: Floating point and Double extenstion.
 
 Additionally we learnt about the signed and unsigned integer number representation and their maximum and minimum ranges for a 64bit instruction set.
 
