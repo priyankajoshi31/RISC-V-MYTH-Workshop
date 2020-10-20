@@ -14,12 +14,12 @@ My Project Repository for RISC-V MYTH ( Microprocessor for You in Thirty Hours) 
 * Day 5 Pipelining the RISC-V Core Micro-instructions.
 * Acknowledgements.
 
-Introduction to RISC V
+## Introduction to RISC V
 RISC-V is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles. Unlike most other ISA designs, the RISC-V ISA is provided under open source licenses.
 
-Advantage of RISC-V over ARM and X86 :
+### Advantage of RISC-V over ARM and X86 :
 
-Free: RISC-V is open-source, there is no need to pay for the IP.
+** Free ** : RISC-V is open-source, there is no need to pay for the IP.
 Simple: RISC-V is far smaller than other commercial ISAs.
 Modular: RISC-V has a small standard base ISA, with multiple standard extensions.
 Stable: Base and first standard extensions are already frozen. There is no need to worry about major updates.
