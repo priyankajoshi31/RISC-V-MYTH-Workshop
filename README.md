@@ -65,17 +65,19 @@ The instructions which work on these numbers are called Base Integer Instruction
 A CPU core implementing all the above type of instrcutions is called as **RV64IMFD CPU Core**.
 
 # Lab Exercises
-Lab 1 : C program for the Sum of numbers from 1 to n
+
+### Lab 1 : C program for the Sum of numbers from 1 to n
 A basic C program to calculate sum of natural numbers upto a limit provided by the user. The code can be found here
 
 ### Commands used for compiling using GNU toolchain
-* 1. Open a file named sum_1_to_n. using leafpad editor.
->$leafpad sum_1_to_n.c
-Write your C code for sum of numbers from 1 to n (say n =9).
-Compile using GNU compiler.
-$gcc sum_1_to_n.c
-Run the compiled object file (Default object file formed with the name a.out). $./a/out
-Lab 2 : Using RISC-V compiler toolchain, and code disassamble ans spike simulator.
+1. Open a file named sum_1_to_n. using leafpad editor.
+'$leafpad sum_1_to_n.c'
+2. Write your C code for sum of numbers from 1 to n (here n =9).
+3. Compile using GNU compiler.
+'$gcc sum_1_to_n.c'
+4. Run the compiled object file (Default object file formed with the name a.out). $./a/out
+
+### Lab 2 : Sum of 1 to n using RISC-V compiler toolchain.
 The same C program is now compiled using RISC-V toolchain. Spike simulator is used to run the object file , and aslo as a debugger.
 
 List of commands
