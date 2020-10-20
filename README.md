@@ -186,15 +186,15 @@ Contents:
 
 After having a strong basics built in TL-Verilog and digital design, and getting completely familiar with the Makerchip Platform, finally we move to the core aspect of the workshop, i.e. to build a RISC V core. On this day, the instruction set architecture of base integer instructions, next_pc logic, the register file, ALU, branch instructions, etc. and eventually the CPU core was built and tested, using appropriate testbench logic, and assembly code developed on Day 2. The codes can be found here.
 
-###Lab Exercises:
-## 1. Next PC Logic
-## 2. Instruction Fetch Logic
-## 3. Instruction Decode
-## 4. Register File Read
-## 5. Arithmetic and Logic Unit(ALU)
-## 6. Register File Write
-## 7. Branch Instructions
-## Final Output: RISCV Core
+### Lab Exercises:
+### 1. Next PC Logic
+### 2. Instruction Fetch Logic
+### 3. Instruction Decode
+### 4. Register File Read
+### 5. Arithmetic and Logic Unit(ALU)
+### 6. Register File Write
+### 7. Branch Instructions
+### Final Output: RISCV Core
 The final RISC-V CPU core (without pipelining) has been completely implemented.
 
 ## Day 5: Complete Pipelined RISC-V CPU micro-architecture
