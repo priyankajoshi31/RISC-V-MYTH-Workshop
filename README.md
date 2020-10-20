@@ -177,8 +177,8 @@ TL-Verilog is an extension for System Verilog, moreover it acts as an higher lev
 
 ## Day-4: Basic RISC-V CPU micro-architecture and Implementation
 
+### Contents:
 ```
-Contents:
 1. Microarchitecture and testbench for a simple RISC-V CPU
 2. Fetch, decode, and execute logic
 3. RISC-V control logic
