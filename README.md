@@ -97,10 +97,72 @@ The C program for sum of 1 to n is now compiled using RISC-V toolchain. Spike si
 
 ## Lab 3 : To find the Max and Min unsigned and signed number representations.
 A C program is implemented to show the maximum and minimum unsigned and signed number representations for a RV64I instruction. The code can be found here
-Commands used are same as Lab 2
+Commands used are same as Lab 2.
 
 ## Final Output Results for Day_1 of the Workshop
 
 1. Sum of numbers from 1 to n (n=9).
 
 2. To find the maximum and minimumm number that can be represented using 64-bit unnsigned and signed integer number reperesentation.
+
+## Day-2 Application Binary Interface and verification
+
+### Contents
+1. Application Binary interface (ABI)
+2. Lab work using ABI function calls
+3. Basic verification flow using iverilog
+
+On the 2nd day, we went deep into understanding the lower layers on how the higher layer instructions in C are translated to machine understandable codes. Just like how Application Program Interface (API) is used by application programs to access the standard libraries, an Application Binary Interface(ABI) , aslo called as System call interface is utilised to access the hardware resources. The ISA is divided into two parts: User & System ISA and User ISA. User ISA is available to the programmer directly through system calls.
+
+How the ABI access the hardware resources?
+
+It uses different registers out of available 32 which are each of width `XLEN = 32 bit` for RV32 (~`XLEN = 64 for RV64`). On a higher level of abstraction these registers are accessed by their respective ABI names.
+
+In RISC-V architecture, the memories are byte addressable. The RISC-V belongs to the little endian memory addressing system.
+
+For base integer instructions there are broadly 3 types of of such registers:
+
+* **I-type** : For instructions having immediate values as operands.
+* **R-type** : For instructions having only registers as operands.
+* **S-type** : For instructions used for storing operations.
+### Snapshot of Modified custom C prorgram and "load.S" Assembly language program
+
+## Lab 1 : ASM & ABI function Calls
+A new program is made by modifying the original `sum1ton.c` and adding ASM and ABI function call .The code can be found here
+
+* Command used to compile the program is `riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o 1to9_custom.o 1to9_custom.c load.S`.
+* Use command `riscv64-unknown-elf-objdump -d 1to9_custom.o|less` to disassemble and view the object file in readable format.
+* To run we use spike which is a RISC-V simulator, use command `spike pk 1to9_custom.o`.
+
+## Lab 2 : To run and verify on a RISC-V Core
+
+An RTL implementation of a RISC-V core has been provided to us and we run the above program using the scripts provided to using iverilog simulator, just to observe the behaviour of the program in hardware. A similar core would be implemented by us in the forthcoming days.
+
+Day 3: Digital Logic with TL-Verilog and Makerchip
+Day 3 of the workshop included the following:
+
+1. Combinational logic in TL-Verilog using Makerchip
+2. Sequential and pipelined logic
+3. Validity
+4. Hierarchy
+An introduction to TL-Verilog was done and we implemented basic combinational and sequential logic using the same.This day finally ended with an implementation of a sequential cyclic calculator. For this, Makerchip IDE, which is an open source tool developed by Redwood EDA has been utilised.
+
+TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the end of the pipeline.
+
+Advantages :
+
+Code reduction , and thus less chances of being bug prone.
+In pipelining ,the flip flops,registers and other staged signals are implied from the context.
+It is very easy to stage different sections without impacting the behaviour of the logic.
+Validity feature which provides easier debugging, cleaner design, automated clock gating and better error checking capabilities.
+Lab Exercises:
+1. Combinational Logic Example: Full Adder
+Combinational Calculator
+Sequential Logic Example: Fibonacci Series
+ Sequential Calculator
+A Simple Pipeline through Pythagorous Theorem example
+Example of Implementation of Pipelining throuh TL-Verilog
+2-Cycle Calculator
+Example : Distance Acculmulator
+ 2-Cycle Calculator with validity
+ Calculator with Single Value Memory
