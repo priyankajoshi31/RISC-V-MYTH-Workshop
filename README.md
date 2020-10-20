@@ -28,6 +28,8 @@ RISC-V is an open standard instruction set architecture (ISA) based on establish
 ### Makerchip Platform
 Makerchip developed by Redwood EDA is a free online environment for developing high-quality integrated circuits. This platform can code, compile, simulate and debug Verilog designs from a browser and the code, block diagram and waveform are tightly integrated. It supports Transaction-Level Verilog (TL-Verilog), in addition to Verilog and synthesizable SystemVerilog.
 
+![1](https://user-images.githubusercontent.com/73126590/96647739-ddd30080-134b-11eb-897f-038b9f6cb3ff.PNG)
+
 
 ### TL-Verilog
 Transaction-Level Verilog (TL-Verilog) is an emerging extension to SystemVerilog that supports a new design methodology, called transaction-level design. In this project design TL-Verilog has been chosed as the HDL of choice with Makerchip IDE. Transaction Level Verilog standard is an extension of Verilog having advantages like simpler syntax, shorter code length and easy pipelining which results in less execution time. The main advantage of TL-Verilog over System Verilog is the code length reduction.
