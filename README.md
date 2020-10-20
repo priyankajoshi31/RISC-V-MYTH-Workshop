@@ -138,31 +138,32 @@ A new program is made by modifying the original `sum1ton.c` and adding ASM and A
 
 An RTL implementation of a RISC-V core has been provided to us and we run the above program using the scripts provided to using iverilog simulator, just to observe the behaviour of the program in hardware. A similar core would be implemented by us in the forthcoming days.
 
-Day 3: Digital Logic with TL-Verilog and Makerchip
-Day 3 of the workshop included the following:
+## Day 3: Digital Logic with TL-Verilog and Makerchip
 
+### Content
 1. Combinational logic in TL-Verilog using Makerchip
 2. Sequential and pipelined logic
 3. Validity
 4. Hierarchy
-An introduction to TL-Verilog was done and we implemented basic combinational and sequential logic using the same.This day finally ended with an implementation of a sequential cyclic calculator. For this, Makerchip IDE, which is an open source tool developed by Redwood EDA has been utilised.
 
+An introduction to TL-Verilog with implemention of basic combinational and sequential logic.Finally implementating a sequential cyclic calculator. Makerchip IDE, which is an open source tool developed by Redwood EDA was utilised for this.
 TL-Verilog is an extension for System Verilog, moreover it acts as an higher level abstraction for System verilog which makes HDL implementation very easy and error free. Here we deal the design at a transaction level assuming the design as a pipeline, where inputs would be provided and output will be generated at the end of the pipeline.
 
-Advantages :
+### Advantages :
 
-Code reduction , and thus less chances of being bug prone.
-In pipelining ,the flip flops,registers and other staged signals are implied from the context.
-It is very easy to stage different sections without impacting the behaviour of the logic.
-Validity feature which provides easier debugging, cleaner design, automated clock gating and better error checking capabilities.
-Lab Exercises:
-1. Combinational Logic Example: Full Adder
-Combinational Calculator
-Sequential Logic Example: Fibonacci Series
- Sequential Calculator
-A Simple Pipeline through Pythagorous Theorem example
-Example of Implementation of Pipelining throuh TL-Verilog
-2-Cycle Calculator
-Example : Distance Acculmulator
- 2-Cycle Calculator with validity
- Calculator with Single Value Memory
+* Code reduction , and thus less chances of being bug prone.
+* In pipelining ,the flip flops,registers and other staged signals are implied from the context.
+* It's very easy to stage different sections without impacting the behaviour of the logic.
+* Validity feature which provides easier debugging, cleaner design, automated clock gating and better error checking capabilities.
+
+### Lab Exercises:
+### 1. Combinational Logic Example: Full Adder
+### 2. Combinational Calculator
+### 3. Sequential Logic Example: Fibonacci Series
+### 4. Sequential Calculator
+### 5. A Simple Pipeline through Pythagorous Theorem
+### 6. Implementation of Pipelining throuh TL-Verilog
+### 7. 2-Cycle Calculator
+### 8. Example : Distance Acculmulator
+### 9. 2-Cycle Calculator with validity
+### 10. Calculator with Single Value Memory
