@@ -66,7 +66,7 @@ A CPU core implementing all the above type of instrcutions is called as **RV64IM
 
 # Lab Exercises
 
-### Lab 1 : C program for the Sum of numbers from 1 to n
+## Lab 1 : C program for the Sum of numbers from 1 to n
 A basic C program to calculate sum of natural numbers upto a limit provided by the user. The code can be found here
 
 ### Commands used for compiling using GNU toolchain
@@ -75,37 +75,32 @@ A basic C program to calculate sum of natural numbers upto a limit provided by t
 3. Compile using GNU compiler. `$gcc sum_1_to_n.c`
 4. Run the compiled object file (Default object file formed with the name a.out). $./a/out
 
-### Lab 2 : Sum of 1 to n using RISC-V compiler toolchain.
+## Lab 2 : Sum of 1 to n using RISC-V compiler toolchain.
 The C program for sum of 1 to n is now compiled using RISC-V toolchain. Spike simulator is used to run the object file , as well as a debugger.
 
 ### Commands for compiling using RISC-V simulator
-1. To run the previously created program of sum_1_to_n.c program  using RISC-V simulator: `$riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum_1_to_n.o sum_1_to_n.c`
+1. To run the previously created program of sum_1_to_n.c program  using RISC-V simulator: 
+`$riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum_1_to_n.o sum_1_to_n.c`
 
-2. To check the assembly code for the C program that we are running,i.e to see the disassembled file, we run the following in a new tab in the terminal: `$riscv64-unknown-elf-objdump -d sum_1_to_n.o | less`
+2. To check the assembly code for the C program that we are running,i.e to see the disassembled file, we run the following in a new tab in the terminal: 
+`$riscv64-unknown-elf-objdump -d sum_1_to_n.o | less`
 
 3. Type \main when the objdump file opens.
 ### Objdump file using -Ofast:
 ### Objdump file usinf -O1:
 
 4. For running the object file compiled by RISC-V compiler, we are using the spike simulator. `$spike pk sum_1_to_n.o`
-For debugging using RISC-V simulator
-In order to debug all the assembly set instructions, we do it with the spike debugger.
 
-$spike -d pk sum_1_to_n.o
+5. In order to debug all the assembly set instructions, we do it with the spike debugger.
 
-In a parallel new tab in the terminal, we open the objdump file , and look out for the address location of the pc (say for main program or any part of the program that we want).
+`$spike -d pk sum_1_to_n.o`
 
-After the spike debugger opens, type :
-
-:until pc 0 100b0 , where 100b0 is the address location from where we start debugging.
-
-:reg 0 a0 , To see the contents of the register a0.
-
-Press enter to execute the next set of assembly code instructions.
-Lab 3 : To find the Max and Min unsigned and signed number representations.
+## Lab 3 : To find the Max and Min unsigned and signed number representations.
 A C program is implemented to show the maximum and minimum unsigned and signed number representations for a RV64I instruction. The code can be found here
-
 Commands used are same as Lab 2
-Final Output Results for Day_1 of the Workshop
-Sum of numbers from 1 to n (n=9).
-To find the maximum and minimumm number that can be represented using 64-bit unnsigned and signed integer number reperesentation.
+
+## Final Output Results for Day_1 of the Workshop
+
+1. Sum of numbers from 1 to n (n=9).
+
+2. To find the maximum and minimumm number that can be represented using 64-bit unnsigned and signed integer number reperesentation.
