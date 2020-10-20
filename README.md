@@ -78,24 +78,21 @@ A basic C program to calculate sum of natural numbers upto a limit provided by t
 4. Run the compiled object file (Default object file formed with the name a.out). $./a/out
 
 ### Lab 2 : Sum of 1 to n using RISC-V compiler toolchain.
-The same C program is now compiled using RISC-V toolchain. Spike simulator is used to run the object file , and aslo as a debugger.
+The C program for sum of 1 to n is now compiled using RISC-V toolchain. Spike simulator is used to run the object file , as well as a debugger.
 
-List of commands
-For compiling using RISC-V simulator
-Since we have previously created our sum_1_to_n.c program file, now to run the same program using RISC-V simulator:
+### Commands for compiling using RISC-V simulator
+1. To run the previously created program of sum_1_to_n.c program  using RISC-V simulator:
 
-$riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum_1_to_n.o sum_1_to_n.c
+`$riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum_1_to_n.o sum_1_to_n.c`
 
-Command info: riscv64-unknown-elf-gcc => RISC-V compiler , -Ofast => Compiler option (Various compiler options like -O1, -o1, -Ofast) , -mabi=lp64 => ABI of long int pointer , -march=rv64i => architecture-64bit , -o => output , sum_1_to_n.o => object file , sum_1_to_n.c => C program file
+2. To check the assembly code for the C program that we are running,i.e to see the disassembled file, we run the following in a new tab in the terminal:
 
-In order to see what is the assembly code for the C program that we are running,i.e to see the disassembled file, we run the following in a new tab in the terminal:
+`$riscv64-unknown-elf-objdump -d sum_1_to_n.o | less`
+3. Type \main when the objdump file opens.
+### Objdump file using -Ofast:
+### Objdump file usinf -O1:
 
-$riscv64-unknown-elf-objdump -d sum_1_to_n.o | less
-When the objdump file opens, type /main (since we are interested in the main program of the code, and press n to go to next instantiation of main in the file).
-Objdump file using -Ofast:
-There are different compiler options like -O1, -Ofast and all. Here, in case of -Ofast, we are getting the number of instructions as 12. If we use the -O1 compiler option, then the number of instructions would be 15 for the "/main" program. Thus from this we infered that the number of instructions can be decreased by using -Ofast instead of -O1 during compilation.
-
-For running the object file compiled by RISC-V compiler, we are using the spike simulator. $spike pk sum_1_to_n.o
+4. For running the object file compiled by RISC-V compiler, we are using the spike simulator. `$spike pk sum_1_to_n.o`
 For debugging using RISC-V simulator
 In order to debug all the assembly set instructions, we do it with the spike debugger.
 
