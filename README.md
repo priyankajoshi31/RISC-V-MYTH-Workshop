@@ -199,8 +199,9 @@ The final RISC-V CPU core (without pipelining) has been completely implemented.
 
 ## Day 5: Complete Pipelined RISC-V CPU micro-architecture
 
-```
-Contents:
+
+### Contents:
+ ```
  1. Pipelining the CPU
  2. Load and store instructions and memory
  3. Completing the RISC-V CPU
