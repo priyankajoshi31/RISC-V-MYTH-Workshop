@@ -53,11 +53,11 @@ A brief overview of how the higher level languages are converted into assembly l
 Additionally we learnt about the signed and unsigned integer number representation and their maximum and minimum ranges for a 64bit instruction set.
 
 ### Integer:
-**Word**: 32 bits.
-**Double word**: 64 bits
+* **Word**: 32 bits.
+* **Double word**: 64 bits
 RV64 range = 0 to (264 - 1)
 
-**Negative i.e signed numbers**:
+* **Negative i.e signed numbers**:
 Range = -263 to (263 - 1)
 
 The instructions which work on these numbers are called Base Integer Instruction RV64I.
@@ -70,24 +70,19 @@ A CPU core implementing all the above type of instrcutions is called as **RV64IM
 A basic C program to calculate sum of natural numbers upto a limit provided by the user. The code can be found here
 
 ### Commands used for compiling using GNU toolchain
-1. Open a file named sum_1_to_n. using leafpad editor.
-`$leafpad sum_1_to_n.c`
+1. Open a file named sum_1_to_n. using leafpad editor. `$leafpad sum_1_to_n.c`
 2. Write your C code for sum of numbers from 1 to n (here n =9).
-3. Compile using GNU compiler.
-`$gcc sum_1_to_n.c`
+3. Compile using GNU compiler. `$gcc sum_1_to_n.c`
 4. Run the compiled object file (Default object file formed with the name a.out). $./a/out
 
 ### Lab 2 : Sum of 1 to n using RISC-V compiler toolchain.
 The C program for sum of 1 to n is now compiled using RISC-V toolchain. Spike simulator is used to run the object file , as well as a debugger.
 
 ### Commands for compiling using RISC-V simulator
-1. To run the previously created program of sum_1_to_n.c program  using RISC-V simulator:
+1. To run the previously created program of sum_1_to_n.c program  using RISC-V simulator: `$riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum_1_to_n.o sum_1_to_n.c`
 
-`$riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum_1_to_n.o sum_1_to_n.c`
+2. To check the assembly code for the C program that we are running,i.e to see the disassembled file, we run the following in a new tab in the terminal: `$riscv64-unknown-elf-objdump -d sum_1_to_n.o | less`
 
-2. To check the assembly code for the C program that we are running,i.e to see the disassembled file, we run the following in a new tab in the terminal:
-
-`$riscv64-unknown-elf-objdump -d sum_1_to_n.o | less`
 3. Type \main when the objdump file opens.
 ### Objdump file using -Ofast:
 ### Objdump file usinf -O1:
