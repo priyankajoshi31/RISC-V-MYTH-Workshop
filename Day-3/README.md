@@ -25,27 +25,33 @@ TL-Verilog is an extension for System Verilog, moreover it acts as an higher lev
 ![1](https://user-images.githubusercontent.com/73126590/96648421-f4c62280-134c-11eb-924b-488ce188dd8e.PNG)
 
 ### 2. Combinational Calculator
+[Code](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day3/comb_calc.v)
 ![2](https://user-images.githubusercontent.com/73126590/96648477-06a7c580-134d-11eb-8410-5de23db5b879.PNG)
 
 ### 3. Sequential Logic Example: Fibonacci Series
 ![3](https://user-images.githubusercontent.com/73126590/96648531-1cb58600-134d-11eb-9877-f3b4a6263123.PNG)
 
 ### 4. Sequential Calculator
+[Code](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day3/sequential_calc.v)
 ![4](https://user-images.githubusercontent.com/73126590/96648581-2f2fbf80-134d-11eb-8244-34397d536651.PNG)
 
 ### 5. A Simple Pipeline through Pythagorous Theorem
 ![5](https://user-images.githubusercontent.com/73126590/96648637-4373bc80-134d-11eb-91fa-80f56c74252a.PNG)
 
 ### 6. Implementation of Pipelining throuh TL-Verilog
+[Code](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day3/basic_pipeline_implementation.v)
 ![6](https://user-images.githubusercontent.com/73126590/96648672-51c1d880-134d-11eb-9ceb-18c4e3aeadf5.PNG)
 
 ### 7. 2-Cycle Calculator
+[Code](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day3/2cycle_calc.v)
 ![7](https://user-images.githubusercontent.com/73126590/96648705-61d9b800-134d-11eb-9d0f-a09abd3ae623.PNG)
 
 ### 8. Example : Distance Acculmulator
+[Code](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day3/distance_accumulator.v)
 ![8](https://user-images.githubusercontent.com/73126590/96648710-64d4a880-134d-11eb-87b4-6cd8fa0280f9.PNG)
 
 ### 9. 2-Cycle Calculator with validity
+[Code](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day3/2cycle_calc_with_validity_slide41.v)
 ![9](https://user-images.githubusercontent.com/73126590/96648759-7c139600-134d-11eb-8829-8aea651be43b.PNG)
 
 ### 10. Calculator with Single Value Memory
