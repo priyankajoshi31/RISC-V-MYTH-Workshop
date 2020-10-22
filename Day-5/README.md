@@ -15,7 +15,7 @@ Implementing the pipelining technique and some additonal instructions for the RI
 * Testing of the pipeline design was done in same manner with Load and store incorporated in asm code.
 * Additionally Incorporation of Jump feature (JAL and JALR instructions) was also done.
 
-The final code can be found here.
+The final code can be found [here](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/Final_code_RISCV_Core.v).
 
 ### Final Day_5 Output
 ![1](https://user-images.githubusercontent.com/73126590/96649177-3dcaa680-134e-11eb-8493-95cbbb8a0f5c.png)
