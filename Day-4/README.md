@@ -27,18 +27,19 @@ After having a strong basics built in TL-Verilog and digital design, and getting
 ![4](https://user-images.githubusercontent.com/73126590/96648956-d0b71100-134d-11eb-82ab-7cf31c67742e.png)
 
 ### 5. Arithmetic and Logic Unit(ALU)
-[Code]()
+[Code](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day4/ALU.v)
 ![5](https://user-images.githubusercontent.com/73126590/96649024-f217fd00-134d-11eb-8834-10ad765ca3d6.png)
 
 ### 6. Register File Write
-[Code]()
+[Code](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day4/Register_write.v)
 ![6](https://user-images.githubusercontent.com/73126590/96649032-f6441a80-134d-11eb-9b54-f17776ace620.png)
 
 ### 7. Branch Instructions
-[Code]()
+[Code]https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day4/branch_instr2.v()
 ![7](https://user-images.githubusercontent.com/73126590/96649039-f9d7a180-134d-11eb-9ced-f25f494fb6cc.png)
 
 ### Final Output: RISCV Core
 The final RISC-V CPU core (without pipelining) has been completely implemented.
-[Code]()
+[Code](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day4/final_code.v)
+
 ![8](https://user-images.githubusercontent.com/73126590/96649044-fc39fb80-134d-11eb-9e77-eb62e76aa828.png)
