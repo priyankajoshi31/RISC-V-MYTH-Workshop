@@ -36,7 +36,7 @@ A CPU core implementing all the above type of instrcutions is called as **RV64IM
 # Lab Exercises
 
 ## Lab 1 : C program for the Sum of numbers from 1 to n
-A basic C program to calculate sum of natural numbers upto a limit provided by the user. The code can be found [here]
+A basic C program to calculate sum of natural numbers upto a limit provided by the user. The code can be found [here](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day1/sum1ton.c)
 
 ### Commands used for compiling using GNU toolchain
 1. Open a file named sum_1_to_n. using leafpad editor. `$leafpad sum_1_to_n.c`
