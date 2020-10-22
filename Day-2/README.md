@@ -23,7 +23,7 @@ For base integer instructions there are broadly 3 types of of such registers:
 ### Snapshot of Modified custom C prorgram and "load.S" Assembly language program
 
 ## Lab 1 : ASM & ABI function Calls
-A new program is made by modifying the original `sum1ton.c` and adding ASM and ABI function call .The code can be found here
+A new program is made by modifying the original `sum1ton.c` and adding ASM and ABI function call .The code can be found [here](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day2/sum1to9.c)
 
 * Command used to compile the program is `riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o 1to9_custom.o 1to9_custom.c load.S`.
 * Use command `riscv64-unknown-elf-objdump -d 1to9_custom.o|less` to disassemble and view the object file in readable format.
