@@ -65,8 +65,8 @@ The C program for sum of 1 to n is now compiled using RISC-V toolchain. Spike si
 `$spike -d pk sum_1_to_n.o`
 
 ## Lab 3 : To find the Max and Min unsigned and signed number representations.
-A C program is implemented to show the maximum and minimum unsigned and signed number representations for a RV64I instruction. The code can be found here
-Commands used are same as Lab 2.
+A C program is implemented to show the maximum and minimum unsigned and signed number representations for a RV64I instruction. The code can be found [here](https://github.com/priyankajoshi31/RISC-V-MYTH-Workshop/blob/main/code/day1/highest_unsigned.c)
+**Commands used are same as Lab 2.**
 
 ## Final Output Results for Day_1 of the Workshop
 
